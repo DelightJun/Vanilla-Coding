@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>HTML & CSS</title>
+    <style>
+      code {
+        color: #ffffff;
+      }
+
+      div,
+      .relative-element code {
+        border-radius: 5px;
+      }
+
+      div {
+        background: #000000;
+        height: 62px;
+        padding-top: 38px;
+        text-align: center;
+        width: 100px;
+      }
+
+      .relative-element {
+        background: #ffffff;
+        border: 2px dashed red;
+        height: 100px;
+        padding: 0;
+      }
+
+      .relative-element code {
+        background: blue;
+        color: #ffffff;
+        display: block;
+        height: 74px;
+        left: 20px;
+        padding-top: 26px;
+        position: relative;
+        text-align: center;
+        top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <code>&#60;div&#62;</code>
+    </div>
+
+    <div class="relative-element">
+      <code
+        >&#60;div class= <br />
+        "relative-element"&#62;</code
+      >
+    </div>
+
+    <div>
+      <code>&#60;div&#62;</code>
+    </div>
+  </body>
+</html>

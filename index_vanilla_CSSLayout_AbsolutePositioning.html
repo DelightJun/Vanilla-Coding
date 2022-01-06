@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>HTML & CSS</title>
+    <style>
+      code {
+        color: #ffffff;
+      }
+      section,
+      .absolute-element,
+      .absolute-element code {
+        border-radius: 5px;
+        padding: 24px 30px;
+      }
+
+      section {
+        background: #000000;
+        height: 145px;
+        position: relative;
+      }
+
+      .absolute-element,
+      .absolute-element code {
+        height: 96px;
+        position: absolute;
+        width: 160px;
+      }
+
+      .absolute-element {
+        border: 2px dashed red;
+        right: 0;
+        top: 0;
+      }
+
+      .absolute-element code {
+        background: blue;
+        color: #ffffff;
+        display: block;
+        right: 20px;
+        top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <code
+        >&#60;section&#62; <br />
+        position: relative;</code
+      >
+
+      <div class="absolute-element">
+        <code
+          >&#60;div class="absolute-element"&#62; <br />
+          position: absolute; <br />
+          right: 20px; <br />
+          top: 20px;</code
+        >
+      </div>
+    </section>
+  </body>
+</html>
