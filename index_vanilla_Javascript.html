@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>바닐라코딩</title>
+    <style>
+      .header {
+        text-align: center;
+      }
+
+      .input {
+        background-color: #dddddd;
+        border: 2px solid pink;
+        border-radius: 5px;
+        font-size: 15px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 300px;
+        height: 30px;
+        margin: -15px 0 0 -150px;
+        transition: background-color 1s;
+      }
+
+      .input:hover {
+        background-color: #ffffff;
+      }
+    </style>
+    <script>
+      const header = document.querySelector(".header");
+      const input = document.querySelector(".input");
+
+      input.onkeydown = function changeHeader() {
+        header.textContent = input.value;
+      };
+    </script>
+  </head>
+  <body>
+    <h1 class="header"></h1>
+    <input class="input" type="text" placeholder="글을 입력해보세요." />
+  </body>
+</html>

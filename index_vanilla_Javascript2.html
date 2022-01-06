@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>Prac</title>
+    <style>
+      button {
+        background-color: pink;
+        border: none;
+        text-align: center;
+        margin: 10px;
+      }
+    </style>
+    <script>
+      var hello = "Greeting";
+
+      function hey() {
+        alert(hello);
+      }
+
+      var s = true;
+      var h = false;
+
+      function trueFalse() {
+        console.log(s === h);
+      }
+
+      function checkNull() {
+        var nothing1 = null;
+        console.log(nothing1 === null);
+      }
+
+      function checkUndefined() {
+        var nothing2 = undefined;
+        console.log(nothing2 === undefined);
+      }
+
+      function checkNullAndUndefined() {
+        var nothing1 = null;
+        var nothing2 = undefined;
+        console.log(nothing1 === nothing2);
+      }
+
+      function checkUndefined2() {
+        var k;
+        console.log(k);
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="hey()">Alert Button</button>
+    <button onclick="trueFalse()">True or False</button>
+    <button onclick="checkNull()">Null</button>
+    <button onclick="checkUndefined()">Undefined</button>
+    <button onclick="checkNullAndUndefined()">Null == Undefined ?</button>
+    <button onclick="checkUndefined2()">undefined</button>
+  </body>
+</html>
+

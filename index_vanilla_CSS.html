@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h1 {
+        color: black;
+        font-size: 30px;
+        font-weight: 1500;
+      }
+
+      /* li,
+      p {
+        color: blue;
+        font-size: 30px;
+      } */
+
+      #firstList {
+        font-size: 20px;
+      }
+
+      .thick {
+        font-weight: bold;
+      }
+
+      .alert {
+        color: red;
+      }
+
+      #box {
+        background: blue;
+        color: white;
+      }
+
+      #nav li {
+        background: blue;
+        color: black;
+      }
+
+      #list > li {
+        border: 1px solid black;
+        color: blue;
+      }
+
+      img[alt="cat"] {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>바닐라코딩</h1>
+    <ul>
+      <li id="firstList">HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+    <p>한 번 끝까지 달려보자!</p>
+
+    <hr />
+
+    <p class="thick">나는 두꺼워, I'm thick</p>
+    <p class="alert">경고, Warning!</p>
+    <p id="box">나는 박스야, I'm box</p>
+
+    <h1>Heading</h1>
+    <h2>SubHeading</h2>
+
+    <ul id="nav">
+      <li>child</li>
+    </ul>
+
+    <hr />
+
+    <ul id="list">
+      <li>child</li>
+      <li>
+        <ul>
+          <li>grand child</li>
+        </ul>
+      </li>
+    </ul>
+
+    <hr />
+
+    <img
+      src="https://i.guim.co.uk/img/media/26392d05302e02f7bf4eb143bb84c8097d09144b/446_167_3683_2210/master/3683.jpg?width=465&quality=45&auto=format&fit=max&dpr=2&s=68615bab04be2077a471009ffc236509"
+      alt="cat"
+    />
+  </body>
+</html>
