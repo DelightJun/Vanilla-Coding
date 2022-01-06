@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vanilla Coding - Google Clone</title>
+    <style>
+      .icon {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+        margin-right: 15px;
+      }
+
+      .icons {
+        margin: 10px;
+      }
+
+      .gmail,
+      .image {
+        font-size: 13px;
+        text-decoration: none;
+        color: black;
+      }
+
+      .gmail:hover,
+      .image:hover {
+        text-decoration: underline;
+      }
+
+      #application {
+        width: 20px;
+      }
+
+      .user {
+        border: 1px solid white;
+        border-radius: 100px;
+        background-color: red;
+        color: white;
+        height: 35px;
+        width: 35px;
+        margin-top: 5px;
+      }
+
+      .google-logo {
+        margin-top: 240px;
+        text-align: center;
+      }
+
+      .searching-bar {
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      .searching-bar img {
+        width: 20px;
+      }
+
+      .searching-bar input {
+        border-radius: 45px;
+        width: 550px;
+        height: 40px;
+      }
+
+      #magnifier {
+        position: relative;
+        top: 5px;
+        left: 40px;
+      }
+
+      #keyboard,
+      #microphone {
+        position: relative;
+        top: 5px;
+        right: 65px;
+      }
+
+      #keyboard {
+        right: 70px;
+      }
+
+      .rest,
+      .covid,
+      .language {
+        margin-top: 25px;
+        text-align: center;
+        font-size: 13px;
+      }
+
+      .rest {
+        display: flex;
+        justify-content: center;
+      }
+
+      .rest button {
+        border: none;
+        border-radius: 5px;
+        height: 40px;
+        margin: 5px;
+      }
+
+      footer {
+        background-color: rgb(241, 238, 238);
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+      }
+
+      .country {
+        border-bottom: 1px solid rgb(214, 211, 211);
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+      }
+
+      .realfooters {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 10px;
+        display: flex;
+      }
+
+      .realfooters button {
+        border: none;
+      }
+
+      .realfooters button:hover {
+        text-decoration: underline;
+      }
+
+      .realfooter2 {
+        position: absolute;
+        right: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="icon">
+        <a href="#" class="icons gmail">Gmail</a>
+        <a href="#" class="icons image">이미지</a>
+        <a href="#" class="icons"
+          ><img src="application.png" id="application"
+        /></a>
+        <button class="icons user">Jun</button>
+      </div>
+    </header>
+    <section>
+      <article>
+        <div class="google-logo">
+          <img
+            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+          />
+        </div>
+        <div class="searching-bar">
+          <i id="magnifier"><img src="magnifier.png" /></i>
+          <input type="search" />
+          <i id="keyboard"><img src="keyboard.png" /></i>
+          <i id="microphone"><img src="microphone.png" /></i>
+        </div>
+        <div class="rest">
+          <button>Google 검색</button>
+          <button>I'm Feeling Lucky</button>
+        </div>
+        <div class="covid">
+          <a href="#" style="text-decoration: none"
+            >가까운 코로나19 선별진료소를 확인하세요</a
+          >
+        </div>
+        <div class="language">
+          Google 제공 서비스 :
+          <a href="#" style="text-decoration: none">English</a>
+        </div>
+      </article>
+    </section>
+    <footer>
+      <div class="country">대한민국</div>
+      <div class="realfooters">
+        <div class="realfooter">
+          <button>Google 정보</button>
+          <button>광고</button>
+          <button>비즈니스</button>
+          <button>검색의 원리</button>
+        </div>
+        <div class="realfooter2">
+          <button>개인정보처리방침</button>
+          <button>약관</button>
+          <button>설정</button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
